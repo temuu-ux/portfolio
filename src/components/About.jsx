@@ -9,7 +9,7 @@ export default function About() {
         </div>
         <div className="flex justify-between mt-11">
           <div className="left">
-            <img className="w-96 h-96" src="./gg.jpeg" alt="" />
+            <img className="w-80 h-96 pl-12" src="./vegeta2.jpeg" alt="" />
           </div>
           <div className="Right max-w-xl w-[584px] h-[694px] gap-4 flex flex-col">
             <h3 className="text-3xl text-gray-900 ">

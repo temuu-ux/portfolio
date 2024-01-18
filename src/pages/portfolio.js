@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Work from "@/components/Work";
 
 export const Portfolio = () => {
   return (
@@ -11,8 +12,9 @@ export const Portfolio = () => {
       <Header />
       <Hero />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Experience />
+      <Work />
     </>
   );
 };

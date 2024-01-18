@@ -1,8 +1,8 @@
 import { ExperienceRender } from "./ExperienceRender";
 
-export default function Experience() {
+export const Experience = () => {
   return (
-    <div className="flex justify-center bg-purple-500">
+    <div className="flex flex-col gap-10 justify-center bg-gray-100">
       <div className="flex gap-4 items-center flex-col">
         <button className="text-gray-600 bg-gray-200 rounded-md w-24 ">
           experience
@@ -11,9 +11,10 @@ export default function Experience() {
           Here is a quick summary of my most recent experiences:
         </p>
       </div>
-      <div>
+      <div className="flex gap-10 ">
         <ExperienceRender />
       </div>
     </div>
   );
-}
+};
+export default Experience;

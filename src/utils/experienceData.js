@@ -1,6 +1,6 @@
 export const experienceData = [
   {
-    companyLogo: "company-1",
+    companyLogo: "company",
     position: "Sr. Frontend Developer",
     exDetails: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -12,7 +12,7 @@ export const experienceData = [
   },
   {
     companyLogo: "company-2",
-    position: "// Team Lead",
+    position: " Team Lead",
     exDetails: [
       "Sed quis justo ac magna.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
