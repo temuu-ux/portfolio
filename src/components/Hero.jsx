@@ -1,4 +1,7 @@
 import { FaFigma } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
+
 export default function Hero() {
   return (
     <div className="container flex mt-10 bg-orange-400 p-[50px] gap-28">
@@ -23,7 +26,9 @@ export default function Hero() {
             <p className="location">Available for new projects</p>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 flex gap-4 ">
+          <FiGithub />
+          <FiTwitter />
           <FaFigma />
         </div>
       </div>
@@ -31,7 +36,7 @@ export default function Hero() {
         <div>
           {" "}
           <div className="w-64 -72 bg-gray-200  ">
-            <img className="w-64 h-72" src="/vegeta.jpeg " alt="" />
+            <img className="w-64 h-72" src="./vegeta.jpeg " alt="" />
           </div>
         </div>
       </div>
