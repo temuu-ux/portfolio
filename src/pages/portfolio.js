@@ -8,7 +8,6 @@ import Work from "@/components/Work";
 export const Portfolio = () => {
   return (
     <>
-      {" "}
       <Header />
       <Hero />
       <About />

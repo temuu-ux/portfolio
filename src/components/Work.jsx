@@ -9,6 +9,10 @@ export default function Work() {
           Some of the noteworthy projects I have built:
         </p>
       </div>
+      <div>
+        <div><img src="" alt="" /></div>
+        <div></div>
+      </div>
     </div>
   );
 }

@@ -2,11 +2,18 @@ import { experienceData } from "@/utils/experienceData";
 
 export const ExperienceRender = () => {
   return (
-    <div>
+    <div className="">
       {experienceData.map((e) => {
         return (
-          <div className=" flex  justify-between text-gray-600 border gap-10 mb-10">
-            <div className="text-[#14A800]">
+          <div className=" flex  justify-between text-gray-600 border gap-10 mb-10 p-6">
+            <div className="text-[#14A800] ">
+              <img
+                className=""
+                src="/logo-upwork.png"
+                alt=""
+                width={92}
+                height={28}
+              />
               <p className="text-2xl ">{e.companyLogo}</p>
             </div>
 

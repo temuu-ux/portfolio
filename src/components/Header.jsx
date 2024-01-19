@@ -1,7 +1,7 @@
 import { ImSun } from "react-icons/im";
 export default function Header() {
   return (
-    <div className="Header bg-blue-300 flex flex-col mt-10 ">
+    <div className="Header  flex flex-col mt-10 ">
       <div className=" flex justify-between ">
         <div className="sWord text-3xl font-semibold">SS</div>
         <div className="Navigation flex gap-5  items-center text-gray-600 ">
@@ -11,11 +11,11 @@ export default function Header() {
           <a href="#">Contact</a>
           <p className="text-gray-100 w-1 ">|</p>
           <div className="Actions flex gap-5 items-start">
-            <p className="text-xl ">
+            <p className="text-xl mt-1">
               <ImSun />
             </p>
 
-            <button className="button bg-black text-white rounded-xl w-32 h-8 ">
+            <button className="button bg-black text-white rounded-xl w-32 h-6 ">
               Dowmload CV
             </button>
           </div>

@@ -11,7 +11,7 @@ export const Experience = () => {
           Here is a quick summary of my most recent experiences:
         </p>
       </div>
-      <div className="flex gap-10 ">
+      <div className="flex gap-10 justify-center ">
         <ExperienceRender />
       </div>
     </div>

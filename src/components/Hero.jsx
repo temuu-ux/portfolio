@@ -1,10 +1,11 @@
 import { FaFigma } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
 
 export default function Hero() {
   return (
-    <div className="container flex mt-10 bg-orange-400 p-[50px] gap-28">
+    <div className="container flex mt-10  p-[50px] gap-28">
       <div className="left-body max-w-3xl h-96 flex gap-8 flex-col">
         <p className="Text1 text-6xl text-gray-900 font-bold">
           Hi,I'am Vegeta ✪
@@ -18,11 +19,14 @@ export default function Hero() {
         </p>
         <div className="gap-20 ">
           <div className="flex">
-            <img src="./icon.svg" alt="" />
+            <img className="w-6 h-6" src="./Icon.png" alt="" />
             <p className="location "> Ahmedabad, India</p>
           </div>
-          <div className="flex">
-            <img src="./icon.png" alt="" />
+          <div className="flex text-center ">
+            <div className=" flex flex-col text-center  w-2 h-2 ">
+              <img src="./Icon2.png" alt="" />
+            </div>
+
             <p className="location">Available for new projects</p>
           </div>
         </div>

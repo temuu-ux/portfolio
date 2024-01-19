@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="About mt-10 ">
-      <div className="Container bg-yellow-400 ">
+      <div className="Container  ">
         <div className="flex justify-center text-center">
           <button className="text-gray-600 bg-gray-200 rounded-md w-24">
             about me
