@@ -5,6 +5,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export const Portfolio = () => {
   return (
@@ -26,6 +27,7 @@ export const Portfolio = () => {
       <section id="section4">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 };

@@ -26,21 +26,23 @@ export default function Hero() {
         <p className={`${text1ClassName} text-6xl  font-bold`}>
           Hi, I'am Vegeta ✪
         </p>
-        <p className={`${text2ClassName} Text2 text-base`}>
+        <p
+          className={`${text2ClassName} Text2 text-base font-inter  not-italic`}
+        >
           I'm a full stack developer (React.js & Node.js) with a focus on
           creating (and occasionally designing) exceptional digital experiences
           that are fast, accessible, visually appealing, and responsive. Even
           though I have been creating web applications for over 7 years, I still
           love it as if it was something new.
         </p>
-        <div className={`${text2ClassName} gap-3 flex flex-col`}>
-          <div className="flex gap-1">
+        <div className={`${text2ClassName} gap-3 flex flex-col `}>
+          <div className="flex gap-3 ">
             <img className="" src="./Icon.png" alt="" />
             <p className="location "> Ahmedabad, India</p>
           </div>
           <div className="flex flex-row items-center gap-3">
-            <div className=" flex flex-col text-center   ">
-              <img className="text-center mt-2" src="./Icon2.png" alt="" />
+            <div className=" flex flex-col justify-center items-center w-3.5">
+              <img className="text-center " src="./Icon2.png" alt="" />
             </div>
 
             <p className="location">Available for new projects</p>

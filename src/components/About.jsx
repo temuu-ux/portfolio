@@ -34,11 +34,13 @@ export default function About() {
             </div>
           </div>
           <div className="Right max-w-xl w-[584px] h-[694px] gap-4 flex flex-col">
-            <h3 className={`text-3xl font-semibold ${text1ClassName}`}>
+            <h3
+              className={`text-3xl font-semibold font-inter  not-italic ${text1ClassName}`}
+            >
               Curious about me? Here you have it:
             </h3>
             <div
-              className={`text-base  h-28 font-normal gap-4 flex flex-col ${text2ClassName}`}
+              className={`text-base  h-28 font-normal gap-4 flex flex-col font-inter  not-italic ${text2ClassName}`}
             >
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in
