@@ -1,21 +1,45 @@
+import { useTheme } from "./context/ThemeContext";
+
 export default function About() {
+  const { theme, setTheme } = useTheme();
+
+  const aboutClassName = theme == "light" ? "bg-[#111827]" : "bg-gray-50";
+
+  const buttonClassName =
+    theme == "light"
+      ? "bg-[#374151] text-[#D1D5DB]"
+      : "text-gray-600 bg-gray-200 ";
+
+  const text1ClassName = theme == "light" ? "text-[#F9FAFB]" : " text-gray-900";
+  const text2ClassName = theme == "light" ? "text-[#D1D5DB]" : "text-gray-600";
+
   return (
-    <div className="About mt-10 ">
-      <div className="Container  ">
-        <div className="flex justify-center text-center">
-          <button className="text-gray-600 bg-gray-200 rounded-md w-24">
+    <div className={`${aboutClassName}  py-24 pr-20 pl-20 `}>
+      <div className=" flex flex-col gap-12">
+        <div className="flex justify-center text-center ">
+          <button
+            className={`rounded-xl text-sm px-5 py-1  ${buttonClassName}`}
+          >
             about me
           </button>
         </div>
-        <div className="flex justify-between mt-11">
-          <div className="left">
-            <img className="w-80 h-96 pl-12" src="./vegeta2.jpeg" alt="" />
+        <div className="flex justify-between ">
+          <div className=" left flex min-w-96 w-[584px] h-[694px] flex-col items-start text-gray-50">
+            <div className="image absolute z-10 mr-[30px]">
+              <img
+                className="w-[400px] h-[480px] border-solid border-[white] border-[8px]"
+                src="./vegeta2.jpeg"
+                alt=""
+              />
+            </div>
           </div>
           <div className="Right max-w-xl w-[584px] h-[694px] gap-4 flex flex-col">
-            <h3 className="text-3xl text-gray-900 ">
+            <h3 className={`text-3xl font-semibold ${text1ClassName}`}>
               Curious about me? Here you have it:
             </h3>
-            <div className="text-base text-gray-600 h-28 font-normal gap-4 flex flex-col">
+            <div
+              className={`text-base  h-28 font-normal gap-4 flex flex-col ${text2ClassName}`}
+            >
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very

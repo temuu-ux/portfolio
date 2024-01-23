@@ -4,16 +4,28 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
+import Contact from "@/components/Contact";
 
 export const Portfolio = () => {
   return (
-    <>
+    <div>
       <Header />
       <Hero />
-      <About />
-      <Skills />
-      <Experience />
+      <section id="section1">
+        <About />
+      </section>
+
+      <section id="section2">
+        <Skills />
+      </section>
+      <section id="section3">
+        <Experience />
+      </section>
+
       <Work />
-    </>
+      <section id="section4">
+        <Contact />
+      </section>
+    </div>
   );
 };

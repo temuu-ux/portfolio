@@ -1,4 +1,4 @@
-export function work() {
+export function WorkText() {
   return (
     <div>
       <div className="w-[576px] h-[480px] p-12 rounded-tl-xl rounded-bl-xl flex-col justify-start items-center gap-6 inline-flex">
