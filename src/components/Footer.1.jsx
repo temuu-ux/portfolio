@@ -9,9 +9,10 @@ export default function Footer() {
   return (
     <div className={`${exClassName} `}>
       <div className="justify-center gap-2 flex px-28 py-6">
-        <p className={`mt-2 ${text2ClassName}`}>
+        {/*  className={`mt-1 w-4 h-4 ${text2ClassName}`} */}
+        <div>
           <TbCircleLetterC />
-        </p>
+        </div>
 
         <p className={`${text2ClassName}`}>|</p>
 

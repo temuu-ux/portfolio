@@ -13,9 +13,14 @@ export default function About() {
   const text1ClassName = theme == "light" ? "text-[#F9FAFB]" : " text-gray-900";
   const text2ClassName = theme == "light" ? "text-[#D1D5DB]" : "text-gray-600";
 
+  const imgClassName =
+    theme == "light"
+      ? "bg-[#374151] border-black "
+      : "bg-gray-200  border-white";
+
   return (
-    <div className={`${aboutClassName}  py-24 pr-20 pl-20 `}>
-      <div className=" flex flex-col gap-12">
+    <div className={`${aboutClassName} `}>
+      <div className="flex flex-col justify-between gap-6 px-4 py-16 max-h-full sm:flex sm: sm:gap-12 max-w-7xl m-auto sm:py-24 sm:px-20">
         <div className="flex justify-center text-center ">
           <button
             className={`rounded-xl text-sm px-5 py-1  ${buttonClassName}`}
@@ -23,24 +28,25 @@ export default function About() {
             about me
           </button>
         </div>
-        <div className="flex justify-between ">
-          <div className=" left flex min-w-96 w-[584px] h-[694px] flex-col items-start text-gray-50">
-            <div className="image absolute z-10 mr-[30px]">
-              <img
-                className="w-[400px] h-[480px] border-solid border-[white] border-[8px]"
-                src="./vegeta2.jpeg"
-                alt=""
-              />
-            </div>
+        <div className="flex flex-col  gap-12 sm:flex sm:flex-row sm:justify-between ">
+          <div className="flex relative justify-center  z-10">
+            <div
+              className={` w-[300px] h-[380px] absolute sm:top-5 sm:right-10  sm:w-full  sm:h-[500px]  -z-10 ${imgClassName}`}
+            ></div>
+            <img
+              className={`w-[280px] h-[360px]   sm:w-[400px] sm:h-[480px] border-solid  border-[8px] z-20 ${imgClassName}`}
+              src="./vegeta2.jpeg"
+              alt=""
+            />
           </div>
-          <div className="Right max-w-xl w-[584px] h-[694px] gap-4 flex flex-col">
+          <div className="Right  sm:w-[584px] sm:h-[694px] gap-4 flex flex-col">
             <h3
-              className={`text-3xl font-semibold font-inter  not-italic ${text1ClassName}`}
+              className={`text-2xl	 sm:text-3xl font-semibold   not-italic ${text1ClassName}`}
             >
               Curious about me? Here you have it:
             </h3>
             <div
-              className={`text-base  h-28 font-normal gap-4 flex flex-col font-inter  not-italic ${text2ClassName}`}
+              className={`text-base   sm:h-28 font-normal sm:gap-4 sm:flex sm:flex-col font-inter  not-italic ${text2ClassName}`}
             >
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in

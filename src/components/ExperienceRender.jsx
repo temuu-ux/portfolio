@@ -12,7 +12,7 @@ export const ExperienceRender = () => {
       {experienceData.map((e) => {
         return (
           <div
-            className={`flex justify-between rounded-xl  gap-12 p-8 padding-[32px w-[896px] h-[288px]] ${exboardClassName}`}
+            className={`flex flex-col  rounded-xl p-8 gap-4  sm:gap-12 sm:flex sm:justify-between  sm:w-[896px] sm:h-[388px] ${exboardClassName}`}
           >
             <div className="text-[#14A800] width-[102px] height-[28px]">
               <img
@@ -25,7 +25,7 @@ export const ExperienceRender = () => {
               <p className="text-2xl ">{e.companyLogo}</p>
             </div>
 
-            <div className=" w-[384px]  ">
+            <div className="sm:w-[384px]   ">
               <p className={` text-xl font-bold  ${textClassName}`}>
                 {e.position}
               </p>

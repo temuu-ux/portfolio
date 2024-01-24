@@ -13,26 +13,28 @@ export default function Work() {
 
   return (
     <div className={`flex flex-col gap-12  py-24 pr-20 pl-20 ${workClassName}`}>
-      <div className="flex flex-col text-center  gap-4">
-        <button className={`px-6 self-center rounded-xl  ${buttonClassName}`}>
-          work
-        </button>
-        <p className={`${text2ClassName} self-center text-[20px]`}>
-          Some of the noteworthy projects I have built:
-        </p>
-      </div>
-      <div className="flex flex-col  gap-12">
-        <div className="flex justify-center items-center  self-stretch px-8 py-0 h-[480px]">
-          <WorkImg />
-          < WorkText />
+      <div className="max-w-full m-auto flex flex-col gap-12">
+        <div className="flex flex-col text-center  gap-4">
+          <button className={`px-6 self-center rounded-xl  ${buttonClassName}`}>
+            work
+          </button>
+          <p className={`${text2ClassName} self-center text-[20px]`}>
+            Some of the noteworthy projects I have built:
+          </p>
         </div>
-        <div className="flex justify-center items-center  self-stretch px-8 py-0">
-          <WorkText />
-          <WorkImg />
-        </div>
-        <div className="flex justify-center items-center  self-stretch px-8 py-0">
-          <WorkImg />
-          <WorkText />
+        <div className="flex flex-col  gap-12">
+          <div className="flex justify-center items-center  self-stretch px-8 py-0 h-[480px]">
+            <WorkImg />
+            <WorkText />
+          </div>
+          <div className="flex justify-center items-center  self-stretch px-8 py-0">
+            <WorkText />
+            <WorkImg className="flex flex-row-reverse" />
+          </div>
+          <div className="flex justify-center items-center  self-stretch px-8 py-0">
+            <WorkImg />
+            <WorkText />
+          </div>
         </div>
       </div>
     </div>

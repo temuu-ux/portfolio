@@ -5,7 +5,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer.1";
 
 export const Portfolio = () => {
   return (
@@ -25,7 +25,7 @@ export const Portfolio = () => {
 
       <Work />
       <section id="section4">
-        <Contact />
+        {/* <Contact /> */}
       </section>
       <Footer />
     </div>

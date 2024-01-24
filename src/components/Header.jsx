@@ -8,28 +8,30 @@ export default function Header() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const headerClassName =
-    theme == "light"
-      ? "flex flex-col py-4 px-20 bg-black"
-      : "flex flex-col py-4 px-20 bg-white";
+  const headerClassName = theme == "light" ? "bg-black " : "bg-white ";
 
-  const logoClassName =
-    theme == "light"
-      ? "text-3xl font-semibold text-white"
-      : "text-3xl font-semibold  text-gray-900";
+  const logoClassName = theme == "light" ? "text-white" : " text-gray-900";
 
   const dowClassName =
     theme == "light"
-      ? "bg-white gray-dark-50 rounded-xl w-[136px] h-[36px] "
-      : " bg-gray-900 text-gray-50 rounded-xl w-[136px] h-[36px] ";
+      ? "bg-white text-gray-50   "
+      : "bg-gray-900 text-gray-50  ";
+
+  const pClassName =
+    theme == "light" ? "sm:text-[#111827]" : "sm:text-[#F9FAFB]";
+
+  const text2ClassName =
+    theme == "light" ? "sm:text-[#D1D5DB]" : "sm:text-gray-600";
 
   const sunClassName = theme === "light" ? <LuMoonStar /> : <ImSun />;
 
   return (
-    <div className={headerClassName}>
-      <div className=" flex justify-between ">
-        <div className={logoClassName}>SS</div>
-        <div className=" flex gap-5  items-center text-gray-600 text-base">
+    <div className={`${headerClassName} `}>
+      <div className=" sm:m-auto  sm:flex justify-between p-[16px] sm:max-w-7xl sm:px-8 sm:py-4 h-fit ">
+        <div className={`${logoClassName} text-3xl font-semibold`}>SS</div>
+        <div
+          className={`hidden sm:block  ${text2ClassName} sm:flex gap-5  items-center text-base`}
+        >
           <a href="#section1">About</a>
           <a href="#section2">Work</a>
           <a href="#section3">Testimonials</a>
@@ -43,7 +45,9 @@ export default function Header() {
               {sunClassName}
             </button>
 
-            <button className={dowClassName}>Dowmload CV</button>
+            <button className={`${dowClassName} w-[136px] h-[36px] rounded-xl`}>
+              <p className={`${pClassName}`}>Dowmload CV</p>
+            </button>
           </div>
         </div>
       </div>

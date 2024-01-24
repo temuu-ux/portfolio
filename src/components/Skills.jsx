@@ -49,23 +49,27 @@ const Skills = () => {
   ];
 
   return (
-    <div
-      className={`px-[20px] py-[24px] md:px-16 md:py-16 flex flex-col max-w-screen-xl mx-auto  gap-14 justify-center  pr-20 pl-20 ${skillsClassName}`}
-    >
-      <div className="flex justify-center text-center ">
-        <h1 className={`${buttonClassName} rounded-xl text-sm px-5 py-1`}>
-          Skills
-        </h1>
-      </div>
-      <h1 className={`${text2ClassName} self-center text-[20px]`}>
-        The skills, tools and technologies I am really good at:
-      </h1>
-      <div
-        className={`flex justify-between gap-16 px-8 width={1216px} flex-wrap ${iconsClassName}`}
-      >
-        {icons.map(({ Icon, text }, index) => (
-          <SkillsLogo id={index} Icon={Icon} text={text} key={index} />
-        ))}
+    <div className={` ${skillsClassName}`}>
+      {/* px-[20px] py-[24px] md:px-16 md:py-16 flex flex-col max-w-screen-xl mx-auto  gap-14 justify-center  pr-20 pl-20 */}
+      <div className="px-4 py-16 gap-12 flex-col flex sm:max-w-7xl sm:m-auto sm:flex sm:flex-col sm:justify-center sm:text-center sm:gap-12 sm:py-24 sm:px-20">
+        <div className=" flex flex-col  justify-center text-center items-center  gap-4">
+          <h1
+            className={`${buttonClassName} rounded-xl text-sm px-5 py-1 w-[75px] flex  `}
+          >
+            Skills
+          </h1>
+          <h1 className={`${text2ClassName} text-[18px] sm:text-[20px]`}>
+            The skills, tools and technologies I am really good at:
+          </h1>
+        </div>
+
+        <div
+          className={`grid grid-cols-3  sm:flex sm:justify-between sm:gap-16 sm:px-8 sm:width={1216px} sm:flex-wrap ${iconsClassName}`}
+        >
+          {icons.map(({ Icon, text }, index) => (
+            <SkillsLogo id={index} Icon={Icon} text={text} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );
