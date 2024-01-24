@@ -12,26 +12,30 @@ export default function Work() {
       : "text-gray-600 bg-gray-200 ";
 
   return (
-    <div className={`flex flex-col gap-12  py-24 pr-20 pl-20 ${workClassName}`}>
-      <div className="max-w-full m-auto flex flex-col gap-12">
-        <div className="flex flex-col text-center  gap-4">
+    <div
+      className={`px-4 py-16  sm:flex sm:flex-col sm:gap-12  sm:py-24 sm:pr-20 sm:pl-20 ${workClassName}`}
+    >
+      <div className="flex flex-col gap-4  sm:max-w-full sm:m-auto sm:flex sm:flex-col sm:gap-12">
+        <div className="flex flex-col text-center gap-4 sm:flex sm:flex-col sm:text-center  sm:gap-4">
           <button className={`px-6 self-center rounded-xl  ${buttonClassName}`}>
             work
           </button>
-          <p className={`${text2ClassName} self-center text-[20px]`}>
+          <p
+            className={`${text2ClassName} text-[18px] font-normal not-italic self-center sm:text-[20px]`}
+          >
             Some of the noteworthy projects I have built:
           </p>
         </div>
-        <div className="flex flex-col  gap-12">
-          <div className="flex justify-center items-center  self-stretch px-8 py-0 h-[480px]">
+        <div className="flex flex-col justify-center items-center gap-12">
+          <div className=" sm:flex sm:justify-center sm:items-center  sm:self-stretch sm:px-8 sm:py-0 ">
             <WorkImg />
             <WorkText />
           </div>
-          <div className="flex justify-center items-center  self-stretch px-8 py-0">
+          <div className="sm: flex flex-col-reverse sm:justify-center sm:flex-row sm:items-center  sm:self-stretch sm:px-8 sm:py-0">
             <WorkText />
-            <WorkImg className="flex flex-row-reverse" />
+            <WorkImg />
           </div>
-          <div className="flex justify-center items-center  self-stretch px-8 py-0">
+          <div className="sm:flex sm:justify-center sm:items-center  sm:self-stretch sm:px-8 sm:py-0">
             <WorkImg />
             <WorkText />
           </div>

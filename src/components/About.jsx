@@ -31,7 +31,7 @@ export default function About() {
         <div className="flex flex-col  gap-12 sm:flex sm:flex-row sm:justify-between ">
           <div className="flex relative justify-center  z-10">
             <div
-              className={` w-[300px] h-[380px] absolute sm:top-5 sm:right-10  sm:w-full  sm:h-[500px]  -z-10 ${imgClassName}`}
+              className={` w-[320px] h-[380px] absolute sm:top-5 sm:right-10  sm:w-full  sm:h-[500px]  -z-10 ${imgClassName}`}
             ></div>
             <img
               className={`w-[280px] h-[360px]   sm:w-[400px] sm:h-[480px] border-solid  border-[8px] z-20 ${imgClassName}`}

@@ -12,7 +12,7 @@ export const ExperienceRender = () => {
       {experienceData.map((e) => {
         return (
           <div
-            className={`flex flex-col  rounded-xl p-8 gap-4  sm:gap-12 sm:flex sm:justify-between  sm:w-[896px] sm:h-[388px] ${exboardClassName}`}
+            className={`flex flex-col  rounded-xl p-8 gap-4  sm:gap-12  sm:flex-row sm:justify-between  sm:w-[896px]  ${exboardClassName}`}
           >
             <div className="text-[#14A800] width-[102px] height-[28px]">
               <img

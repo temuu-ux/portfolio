@@ -61,16 +61,14 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="w-[360px] h-[360px] relative flex justify-center items-center">
+        <div className="w-[340px] h-[300px] flex items-center justify-center sm:w-[400px] sm:h-[360px] relative sm:flex sm:justify-center sm:items-center">
           <div
-            className={`w-[280px] h-80 left-[40px] top-[40px] absolute ${imgClassName}`}
+            className={`w-[260px] h-[280px] top-[20px]  sm:w-[280px] sm:h-[320px] sm:left-[40px] sm:top-[40px] absolute ${imgClassName}`}
           ></div>
           <img
-            className={`w-[280px] h-80 left-0 top-0 absolute border-8  ${imgClassName}`}
+            className={`w-[240px] h-[280px]  sm:w-[280px] sm:h-[320px] sm:left-0 sm:top-0 absolute border-8  ${imgClassName}`}
             src="./vegeta.jpeg "
             alt=""
-            width={280}
-            height={300}
           />
         </div>
       </div>

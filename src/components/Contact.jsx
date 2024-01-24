@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div className={` ${contactClassName}`}>
       {/* flex flex-col gap-12 justify-center  py-24 pr-20 pl-20 */}
-      <div className="max-w-7xl  m-auto flex flex-col gap-6 py-24 px-20">
+      <div className=" px-4 py-16 flex flex-col gap-4 sm:max-w-7xl  sm:m-auto sm:flex sm:flex-col sm:gap-6 sm:py-24 sm:px-20">
         <div className="flex gap-4 items-center flex-col">
           <button
             className={`rounded-xl text-sm px-5 py-1  ${buttonClassName}`}
@@ -24,7 +24,7 @@ export default function Contact() {
           </button>
 
           <p
-            className={`w-[576px] h-[56px] text-center  text-xl font-normal flex gap-4 items-center ${text2ClassName}`}
+            className={`sm:w-[576px] sm:h-[56px] text-center  text-xl font-normal sm:flex sm:gap-4 items-center ${text2ClassName}`}
           >
             What’s next? Feel free to reach out to me if you're looking for a
             developer, have a query, or simply want to connect.
@@ -34,14 +34,14 @@ export default function Contact() {
           <div
             className={`flex justify-center gap-3 text-center font-semibold text-3xl `}
           >
-            <img className="w-8 h-8" src="/email.png" alt="" />
-            <p>temuulenb80@gmail.com</p>
-            <img className="w-10 h-10" src="/cop2.png" alt="" />
+            <img className=" w-6 h-6  sm:w-8 sm:h-8" src="/email.png" alt="" />
+            <p className="text-lg sm:text-4xl">temuulenb80@gmail.com</p>
+            <img className="w-7 h-7  sm:w-10 sm:h-10" src="/cop2.png" alt="" />
           </div>
           <div className="flex  justify-center gap-3 text-center font-semibold text-3xl">
-            <img className="w-8 h-8" src="/call.png" alt="" />
-            <p>+976 96440316</p>
-            <img className="w-10 h-10" src="/cop2.png" alt="" />
+            <img className=" w-6 h-6 sm:w-8 sm:h-8" src="/call.png" alt="" />
+            <p className="text-lg sm:text-4xl">+976 96440316</p>
+            <img className="w-7 h-7  sm:w-10 sm:h-10" src="/cop2.png" alt="" />
           </div>
           <div
             className={`flex justify-center gap-3  text-center flex-col text-base font-normal ${text2ClassName}`}

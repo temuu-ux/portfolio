@@ -9,10 +9,10 @@ export function WorkImg() {
   return (
     <div>
       <div
-        className={`w-[576px] h-[480px] p-12  rounded-tl-xl rounded-bl-xl   justify-center items-center inline-flex ${borderClassName}`}
+        className={`w-[343px] h-[256px] p-8 flex text-center rounded-t-xl sm:w-[576px] sm:h-[480px] sm:p-12  sm:rounded-tl-xl sm:rounded-bl-xl   sm:justify-center sm:items-center sm:inline-flex ${borderClassName}`}
       >
         <img
-          className="w-[480px] h-96 relative rounded-xl shadow"
+          className="w-[279px] h-[192px]  sm:w-[480px] sm:h-96 relative rounded-xl shadow-black"
           src="Picture.png"
         />
       </div>
