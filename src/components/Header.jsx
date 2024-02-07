@@ -8,6 +8,8 @@ export default function Header() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  
+
   const headerClassName = theme == "light" ? "bg-black " : "bg-white ";
 
   const logoClassName = theme == "light" ? "text-white" : " text-gray-900";

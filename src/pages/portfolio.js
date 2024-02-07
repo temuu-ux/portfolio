@@ -8,7 +8,7 @@ import Contact from "@/components/Contact";
 // import Footer from "@/components/Footer.1";
 import Footer from "@/components/Footer";
 
-export const Portfolio = () => {
+const Portfolio = () => {
   return (
     <div>
       <Header />
@@ -32,3 +32,4 @@ export const Portfolio = () => {
     </div>
   );
 };
+export default  ;
